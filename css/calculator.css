@@ -11,9 +11,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f2937;
+    background-color: #091921;
 }
-
 nav{
     height: 10vh;
     position: absolute;
@@ -33,7 +32,6 @@ nav ul{
 }
 nav ul li{
     padding-left: 5%;
-
 }
 li a{
     background-color: #b7bac3;
@@ -52,7 +50,7 @@ li a{
     border-radius: 4%;
     padding: 20px;
     box-shadow: 0 3px 15px rgba(94, 98, 107, 0.39);
-    background-color: #000;
+    background-color: #717377;
 }
 input{
     text-align: end;
@@ -88,3 +86,24 @@ button{
 .equel{
     background-color: #fb6700;
 }
+
+/* ======== Media Query========*/
+@media only screen and (max-width: 600px) {
+    
+    nav ul{
+        width: 100%;
+    }
+    nav ul li{
+        padding-left: 3%;
+    }
+    li a{
+        text-decoration: none;
+        padding: 4px 9px;
+        font-size: 19px;
+    }
+    .ro{
+        position: absolute;
+        top:45px;
+        left: 35%;
+    }
+    }

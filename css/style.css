@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +9,12 @@
     background-color: #091921;
 }
 body{
-    background-color: #1f2937;
+    background-color: #091921;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Poppins ,sans-serif    ;
 
 }
 nav{
@@ -34,7 +36,6 @@ nav ul{
 }
 nav ul li{
     padding-left: 5%;
-
 }
 li a{
     background-color: #b7bac3;
@@ -123,16 +124,6 @@ li a{
     --darkdark: #111827;
     --light: #f3f4f6;
 }
-.watch{
-    background-color: var(--darkdark);
-    text-align: center;
-    margin: 10rem auto;
-    border-radius: .5rem;
-    width: 100%;
-    max-width: 360px;
-    padding: 3rem;
-    color: var(--light);
-}
 .watch .time{
     font-size: 4rem;
     font-weight: 500;
@@ -140,31 +131,15 @@ li a{
 }
 
 /*========== Stop Watch  ========== */
-
-:root{
-    --primary:crimson;
-    --dark: #1f2937;
-    --darkdark: #111827;
-    --light: #f3f4f6;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: var(--dark);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 .watch{
-    background-color: var(--darkdark);
+    background-color: #717377;
     text-align: center;
     margin: 10rem auto;
     border-radius: .5rem;
     width: 100%;
     max-width: 360px;
     padding: 3rem;
-    color: var(--light);
+    color: #f9faf5;
 }
 .watch .time{
     font-size: 4rem;
@@ -194,4 +169,25 @@ body{
 }
 .btn:active{
     transform: scale(.9) translateY(2px);
+}
+
+/* ======== Media Query========*/
+@media only screen and (max-width: 600px) {
+    
+nav ul{
+    width: 100%;
+}
+nav ul li{
+    padding-left: 3%;
+}
+li a{
+    text-decoration: none;
+    padding: 4px 9px;
+    font-size: 19px;
+}
+.ro{
+    position: absolute;
+    top:45px;
+    left: 35%;
+}
 }
